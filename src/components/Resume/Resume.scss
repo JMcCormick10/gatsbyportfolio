@@ -1,0 +1,16 @@
+.Resume{
+    position: relative;
+    overflow: hidden;
+    .resume-inner{
+        background: #fff;
+        box-shadow: 0px 8px 64px -10px rgba(174, 208, 202, 0.4);
+        border-radius: 30px;
+        padding: 0 25px;
+    }
+    .shape{
+        position: absolute;
+        right: -30px;
+        bottom: 25%;
+        transform: rotate(75deg);
+    }
+}

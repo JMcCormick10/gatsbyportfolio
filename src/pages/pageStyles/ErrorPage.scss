@@ -1,0 +1,10 @@
+@import '/src/styles/styles.scss';
+
+.error-page-content{
+    padding-top: 8rem;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 50vh;
+    background: linear-gradient(to bottom left, #F4FFF8 3.19%, rgba(251, 253, 254, 0) 80.54%);
+}

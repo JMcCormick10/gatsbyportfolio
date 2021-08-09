@@ -1,0 +1,30 @@
+@import '/src/styles/styles.scss';
+.Projects{
+    .categories{
+        display: flex;
+        flex-direction: row;
+        margin: 0 -5px;
+        justify-content: center;
+        margin: 60px 0 20px 0;
+        flex-wrap: wrap;
+        @media screen and (max-width: 576px){
+            margin: 20px 0 20px 0;
+        }
+        button{
+            box-shadow: none;
+            margin: 0 5px;
+            font-size: 10px;
+            @media screen and (max-width: 576px){
+                flex: 0 0 100%;
+                margin: 5px;
+                width: auto;
+            }
+            &.selected{
+                background: $black;
+                .button-title{
+                    color: #fff;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,29 @@
+@import '/src/styles/styles.scss';
+.BoxLink{
+    border: 1px solid $black;
+    border-radius: 7px;
+    width: 31px;
+    height: 27px;
+    border: 1px solid #CCCCCC;
+    position: relative;
+    display: inline-block;
+    transition: 0.3s ease-in-out;
+    &:not(:last-of-type){
+        margin-right: 5px;
+    }
+    svg{
+        position: absolute;
+        color: $black;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 14px;
+        transition: 0.3s ease-in-out;
+    }
+    &:hover{
+        background-color: $black;
+        svg{
+            color: #fff;
+        }
+    }
+}

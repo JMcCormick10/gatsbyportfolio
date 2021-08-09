@@ -1,0 +1,62 @@
+@import '/src/styles/styles.scss';
+.LoadScreen{
+    font-family: $headingFont;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 38px;
+    //height: 48px;
+    width: 42px;
+    color: $black;
+    display: block;
+    .left{
+        position: fixed;
+        left: 0;
+        width: 50%;
+        top: 0;
+        bottom: 0;
+        background: $green;
+        z-index: 101;
+        transition: 1s ease-in-out;
+        .j{
+            position: absolute;
+            right: -2px;
+            top: 50%;
+            transform: translateY(-50%);
+            display: block;
+        }
+        
+    }
+    .right{
+        position: fixed;
+        right: 0;
+        width: 50%;
+        top: 0;
+        bottom: 0;
+        background: $green;
+        z-index: 101;
+        transition: 1s ease-in-out;
+        .m{
+            position: absolute;
+            left: -2px;
+            top: 50.5%;
+            transform: translateY(-50%);
+            display: block;
+        }
+    }
+    &:hover{
+        color: $black;
+    }
+    &.hide{
+        .left{
+            width: 0;
+            transition: 1s ease-in-out 0.5s;
+
+        }
+        .right {
+            width: 0;
+            transition: 1s ease-in-out 0.5s;
+
+        }
+    }
+}

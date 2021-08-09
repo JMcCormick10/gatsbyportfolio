@@ -1,0 +1,51 @@
+@import '/src/styles/styles.scss';
+.FormElement{
+    position: relative;
+    margin-bottom: 25px;
+    input, textarea{
+        background: #fff;
+        box-shadow: 0px 8px 54px -10px rgba(174, 208, 202, 0.5);
+        border-radius: 10px;
+        border: none;
+        width: 100%;
+        padding: 20px 10px;
+        font-size: 12px;
+        &:focus{
+            border: 2px solid $black;
+            outline: none;
+        }
+    }
+    input{
+        height: 60px;
+    }
+    textarea{
+        height: 150px;
+    }
+    label{
+        position: absolute;
+        left: 25px;
+        top: 15px;
+        color: #656565;
+        font-size: 15px;
+        transition: 0.3s ease-in;
+        pointer-events: none;
+    }
+    .errorMessage{
+        display: none;
+        position: absolute;
+        left: 15px;
+        bottom: -15px;
+        color: red;
+        font-size: 10px;
+        display: none;
+        &.show{
+            display: block;
+        }
+    }
+    &.focused{
+        label{
+            top: 5px;
+            font-size: 10px;
+        }
+    }
+}

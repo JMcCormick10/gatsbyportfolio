@@ -1,0 +1,42 @@
+@import '/src/styles/styles.scss';
+.Banner{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    &:after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: -5rem;
+        width: 100%;
+        background: linear-gradient(to bottom right, #F4FFF8 3.19%, rgba(251, 253, 254, 0) 80.54%);
+    }
+    h1{
+        margin: 20px 0;
+    }
+    .copy{
+        margin-bottom: 20px;
+    }
+    .shape{
+        position: absolute;
+        @media screen and (max-width: 767px){
+            opacity: 0.5;
+        }
+    }
+    .shape-circle{
+        right: 100px;
+        top: 30%;
+    }
+    .shape-square{
+        left: 10%;
+        top: 50%;
+    }
+    .shape-rectangle{
+        left: 5%;
+        top: 30%;
+    }
+
+}

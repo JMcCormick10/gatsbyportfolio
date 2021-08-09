@@ -1,53 +1,27 @@
 import * as React from "react"
-import { Link } from "gatsby"
+import Layout from '../Layout/Layout';
+import '../pages/pageStyles/ErrorPage.scss';
+import Button from '../components/Button/Button';
+import { Link } from 'gatsby';
 
-// styles
-const pageStyles = {
-  color: "#232129",
-  padding: "96px",
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
-}
-const headingStyles = {
-  marginTop: 0,
-  marginBottom: 64,
-  maxWidth: 320,
-}
 
-const paragraphStyles = {
-  marginBottom: 48,
-}
-const codeStyles = {
-  color: "#8A6534",
-  padding: 4,
-  backgroundColor: "#FFF4DB",
-  fontSize: "1.25rem",
-  borderRadius: 4,
-}
+
 
 // markup
 const NotFoundPage = () => {
   return (
-    <main style={pageStyles}>
-      <title>Not found</title>
-      <h1 style={headingStyles}>Page not found</h1>
-      <p style={paragraphStyles}>
-        Sorry{" "}
-        <span role="img" aria-label="Pensive emoji">
-          😔
-        </span>{" "}
-        we couldn’t find what you were looking for.
-        <br />
-        {process.env.NODE_ENV === "development" ? (
-          <>
-            <br />
-            Try creating a page in <code style={codeStyles}>src/pages/</code>.
-            <br />
-          </>
-        ) : null}
-        <br />
-        <Link to="/">Go home</Link>.
-      </p>
-    </main>
+    <Layout>
+      <div className="error-page-content">
+        <div className="container">
+          <div className="row">
+            <div className="col-12 col-lg-8 mx-auto text-center">
+              <h1>Looks like you're lost!</h1>
+                <p>Click on any of the links above to get to somewhere familiar.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </Layout>
   )
 }
 

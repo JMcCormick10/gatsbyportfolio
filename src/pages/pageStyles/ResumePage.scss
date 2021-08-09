@@ -1,0 +1,12 @@
+.ResumePage{
+    position: relative;
+    &:after{
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: linear-gradient(to bottom left, #F4FFF8 3.19%, rgba(251, 253, 254, 0) 80.54%);
+    }
+}

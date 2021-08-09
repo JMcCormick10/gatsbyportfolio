@@ -1,0 +1,29 @@
+@import '../../styles/styles.scss';
+.Logo {
+    font-family: $headingFont;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 38px;
+    height: 48px;
+    position: relative;
+    width: 42px;
+    color: $black;
+    display: block;
+    cursor: pointer;
+    &:hover{
+        color: $black;
+    }
+    .j{
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: block;
+    }
+    .m{
+        right: 0;
+        position: absolute;
+        bottom: 0;
+        display: block;
+    }
+}

@@ -1,0 +1,85 @@
+@import '/src/styles/styles.scss';
+.ContactForm{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+    .FormElement{
+        padding: 0 15px;
+        flex: 0 0 100%;
+    }
+    @media screen and (min-width: 768px){
+        .FormElement:nth-child(-n + 2){
+            flex: 0 0 50%;
+        }
+    }
+    .form-footer{
+        padding: 0 15px;
+        flex: 0 0 100%;
+    }
+    button[type="submit"]{
+        color: $black;
+        border: none;
+        background: transparent;
+        cursor: pointer;
+        position: relative;
+        opacity: 1;
+
+        .submit-text{
+            border-bottom: 1px solid $black;
+            font-weight: bold;
+            transition: 0.3s ease-in-out;
+            margin-right: 15px;
+        }
+        svg{
+            color: $black;
+            position: absolute;
+            right: 0;
+            transform: rotate(45deg);
+            transition: 0.3s;
+        }
+        &[disabled]{
+            opacity: 0.5;
+            cursor: initial;
+        }
+        
+        &:not([disabled]){
+            svg{
+                animation: hoverPlane 0.7s linear 0s infinite alternate;
+            }
+        }
+        &.submitted{
+            .submit-text{
+                opacity: 0;
+            }
+
+            svg{
+                animation: flyPlane 2s linear 0.5s 1 normal forwards;
+            }
+        }
+    }
+}
+
+@keyframes hoverPlane{
+    0%{
+        transform: translate(0, 0px) rotate(45deg);
+    }
+
+    50%{
+        transform: translate(2px, 0) rotate(45deg);
+
+    }
+    100%{
+        transform: translate(0 4px) rotate(45deg);
+    }
+}
+
+@keyframes flyPlane{
+    0%{
+        transform: translate(0, 0) rotate(45deg);
+    }
+    
+    100%{
+        transform: translate(200px) rotate(45deg);
+        opacity: 0;
+    }
+}

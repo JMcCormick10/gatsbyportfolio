@@ -1,0 +1,25 @@
+@import '/src/styles/styles.scss';
+.Notification{
+    background: $green;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: 0.3s ease-in-out;
+    z-index: 10;
+    padding: 20px;
+    text-align: center;
+    p{
+        margin: 0;
+        font-weight: bold;
+    }
+    svg{
+        font-size: 30px;
+    }
+    // opacity: 0;
+    // visibility: hidden;
+    &.show{
+        opacity: 1;
+        visibility: visible;
+    }
+}

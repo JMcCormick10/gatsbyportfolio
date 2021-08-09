@@ -1,0 +1,113 @@
+.shape{
+    height: auto;
+    position: relative;
+    z-index: 1;
+    pointer-events: none;
+    transform: translate(0, 0);
+    &.shape-circle, &.shape-donut{
+        width: 250px;
+        animation: floatCircle 30s linear 0s infinite alternate;
+    }
+    
+    &.shape-square, &.shape-pyramid{
+        width: 150px;
+        animation: floatSquare 30s linear 0s infinite alternate;
+
+    }
+    &.shape-rectangle, &.shape-cylinder{
+        width: 100px;
+        animation: floatRectangle 30s linear 0s infinite alternate;
+
+    }
+    &.no-animation{
+        animation: unset;
+    }
+}
+
+@keyframes floatCircle{
+    0%{
+        transform: translate(0, 0);
+    }
+    17%{
+        transform: translate(random(100) - 50 + px, random(100) - 50 + px);
+    }
+    34%{
+        transform: translate(random(100) - 50 + px, random(100) - 50 + px);
+
+    }
+    51%{
+        transform: translate(random(100) - 50 + px, random(100) - 50 + px);
+
+    }
+    68%{
+        transform: translate(random(100) - 50 + px, random(100) - 50 + px);
+
+    }
+
+    85%{
+        transform: translate(random(100) - 50 + px, random(100) - 50 + px);
+
+    }
+    100%{
+        transform: translate(0, 0);
+    }
+    
+}
+@keyframes floatSquare{
+    0%{
+        transform: translate(0, 0);
+    }
+    17%{
+        transform: translate(random(100) - 50 + px, random(100) - 50 + px);
+    }
+    34%{
+        transform: translate(random(100) - 50 + px, random(100) - 50 + px);
+
+    }
+    51%{
+        transform: translate(random(100) - 50 + px, random(100) - 50 + px);
+
+    }
+    68%{
+        transform: translate(random(100) - 50 + px, random(100) - 50 + px);
+
+    }
+
+    85%{
+        transform: translate(random(100) - 50 + px, random(100) - 50 + px);
+
+    }
+    100%{
+        transform: translate(0, 0);
+    }
+    
+}
+@keyframes floatRectangle{
+    0%{
+        transform: translate(0, 0);
+    }
+    17%{
+        transform: translate(random(100) - 50 + px, random(100) - 50 + px);
+    }
+    34%{
+        transform: translate(random(100) - 50 + px, random(100) - 50 + px);
+
+    }
+    51%{
+        transform: translate(random(100) - 50 + px, random(100) - 50 + px);
+
+    }
+    68%{
+        transform: translate(random(100) - 50 + px, random(100) - 50 + px);
+
+    }
+
+    85%{
+        transform: translate(random(100) - 50 + px, random(100) - 50 + px);
+
+    }
+    100%{
+        transform: translate(0, 0);
+    }
+    
+}

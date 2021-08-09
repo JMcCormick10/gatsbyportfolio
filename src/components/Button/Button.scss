@@ -1,0 +1,69 @@
+@import '/src/styles/styles.scss';
+
+.Button{
+    position: relative;
+    background: $black;
+    color: #fff;
+    box-shadow: 0px 8px 64px -10px #AED0CA;
+    border-radius: 60px;
+    border: none;
+    outline: none;
+    padding: 15px 35px;
+    font-weight: 700;
+    font-size: 15px;
+    overflow: hidden;
+    cursor: pointer;
+    border: 1px solid $black;
+    outline: none !important;
+    &.small{
+      padding: 10px 25px;
+
+    }
+    .button-title{
+        position: relative;
+        z-index: 3;
+        transition: 0.3s ease-in-out;
+    }
+    .button-aware{
+        position: absolute;
+        display: block;
+        width: 0;
+        height: 0;
+        border-radius: 50%;
+        background-color: $green;
+        -webkit-transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
+        transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
+        -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+        z-index: 1;
+      }
+
+  &:hover .button-aware {
+    width: 225%;
+    height: 562.5px;
+  }
+  &:hover .button-title{
+      color: $black;
+  }
+  &:active {
+    background-color: $green;
+  }
+  &.btn-transparent{
+    background: transparent;
+    border: 1px solid #eee;
+    .button-title{
+      color: $black;
+    }
+    .button-aware{
+      background-color: $black;
+    }
+    &:hover .button-title{
+      color: #fff;
+    }
+  }
+
+  &.btn-small{
+    padding: 8px 30px;
+  }
+
+}

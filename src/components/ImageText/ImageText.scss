@@ -1,0 +1,46 @@
+@import '/src/styles/styles.scss';
+.ImageText{
+    position: relative;
+    &:after{
+        content: '';
+        position: absolute;
+        left: 0;
+        top: -10rem;
+        width: 100%;
+        bottom: 0;
+        background: linear-gradient(to bottom right, #F4FFF8 3.19%, rgba(251, 253, 254, 0) 80.54%);
+        transform: rotate(-180deg);
+    }
+    .shape-circle{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 280px;
+        height: auto;
+        transform: translate(-50%, 22%);
+    }
+    .shape-rectangle{
+        position: absolute;
+        right: 0;
+        top: -5rem;
+        z-index: -1;
+    }
+    @media screen and (min-width: 768px){
+
+        .image-container{
+            position: relative;
+            height: 100%;
+            img.main-image{
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+        .text-col{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 3rem 15px;
+        }
+    }
+}

@@ -1,0 +1,6 @@
+.ResumeSection{
+    padding: 25px 0;
+    &:not(:last-of-type){
+        border-bottom: 1px solid #D6E3DD;
+    }
+}
