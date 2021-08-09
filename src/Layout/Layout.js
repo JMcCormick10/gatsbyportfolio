@@ -13,6 +13,8 @@ const Layout = ( { pageName, children}) => {
     const [showLoadScreen, setShowLoadScreen] = React.useState(true);
 
     React.useEffect(() => {
+        document.addEventListener("scroll", assignRevealClasses);
+
         //check for section in url and scroll.
         setShowLoadScreen(false);
         const params = new URLSearchParams(window.location.search);
@@ -25,10 +27,8 @@ const Layout = ( { pageName, children}) => {
         setTimeout(() => {
             assignRevealClasses();
         }, 800)
-
     }, [])
 
-    document.addEventListener("scroll", assignRevealClasses);
 
     const onMenuLinkClicked = (page, section, isMobile) => {
         setMobileMenuShow(false)
