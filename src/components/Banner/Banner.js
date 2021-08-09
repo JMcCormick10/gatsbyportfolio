@@ -15,6 +15,8 @@ const Banner = (props) => {
         return(null);
     })
     const onClickButton = () => {
+        document.querySelector('.ContactForm').scrollIntoView({behaviour: 'smooth'});
+
     }
     return(
         <section className="Banner">
