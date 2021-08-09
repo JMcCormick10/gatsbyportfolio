@@ -90,8 +90,8 @@ const ContactForm = () => {
     }
 
     const sendMyselfEmail = (templateParams) => {
-        //emailjs.init("user_lgwXf2cv5dRTi4iuNvDe7");
-        //emailjs.send('service_ara43sh', 'template_555whes', templateParams);
+        emailjs.init("user_lgwXf2cv5dRTi4iuNvDe7");
+        emailjs.send('service_ara43sh', 'template_555whes', templateParams);
     }
 
     const checkFormValid = (data) => {
