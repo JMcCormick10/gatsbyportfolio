@@ -12,8 +12,8 @@ const Footer = (props) => {
             <div className="footer-top">
                 <div className="container">
                     <hr/>
-                    <div className="row mt-5 reveal reveal-up">
-                        <div className="col-12 col-lg-7">
+                    <div className="row mt-5">
+                        <div className="col-12 col-lg-7 reveal reveal-up">
                             <h2 className="h1">Need a <span className="background-color">website?</span><br/>
                                 send me a message
                             </h2>

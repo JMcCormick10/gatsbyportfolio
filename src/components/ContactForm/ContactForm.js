@@ -81,7 +81,12 @@ const ContactForm = () => {
         }
         if(formValid){
             setFormSubmitNotification(true);
-            sendMyselfEmail();
+            let templateParams = {
+                from_name: contactFormData[0].value,
+                from_email: contactFormData[1].value,
+                message: contactFormData[2].value,
+            }
+            sendMyselfEmail(templateParams);
             setFormSubmitted(true);
             setTimeout(() => {
                 setFormSubmitNotification(false);
@@ -90,6 +95,7 @@ const ContactForm = () => {
     }
 
     const sendMyselfEmail = (templateParams) => {
+        console.log(templateParams);
         emailjs.init("user_lgwXf2cv5dRTi4iuNvDe7");
         emailjs.send('service_ara43sh', 'template_555whes', templateParams);
     }
@@ -114,7 +120,7 @@ const ContactForm = () => {
             {
                 formSubmitNotification ? <Notification message="Thanks for reaching out, I'll be in touch!"/> : null
             }
-            <form className="ContactForm"  onSubmit={(event) => onHandleContactFormSubmit(event)}>
+            <form className="ContactForm reveal reveal-up"  onSubmit={(event) => onHandleContactFormSubmit(event)}>
                 {
                     contactFormData.map( formElement => (
                         <FormElement 
