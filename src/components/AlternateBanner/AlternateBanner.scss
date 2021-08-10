@@ -8,6 +8,7 @@
     overflow: hidden;
     //background: linear-gradient(123.32deg, #F4FFF8 3.19%, rgba(251, 253, 254, 0) 80.54%);
     overflow: visible;
+    z-index: 3;
     h1{
         margin: 20px 0;
     }
@@ -16,6 +17,10 @@
     }
     .shape{
         position: absolute;
+        z-index: 3;
+        @media screen and (max-width: 767px){
+            opacity: 0.5;
+        }
     }
     .shape-donut{
         right: 0;
@@ -23,8 +28,13 @@
         transform: translateY(-50%);
     }
     .shape-pyramid{
-        bottom: 0;
+        bottom: -6rem;
         top: unset;
+        left: 0;
+    }
+    .shape-cylinder{
+        left: 0;
+        bottom: 100px;
     }
     .file-download{
         color: $black;
@@ -32,7 +42,7 @@
         position: relative;
         text-decoration: none;
         svg{
-            margin-left: 3px;
+            margin-left: 8px;
         }
         &:after{
             content: '';
@@ -49,6 +59,10 @@
                 width: 100%;
             }
         }
+    }
+    .container .row{
+        position: relative;
+        z-index: 4;
     }
 
 }

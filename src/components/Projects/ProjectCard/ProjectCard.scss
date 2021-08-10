@@ -6,9 +6,6 @@
         position: relative;
         cursor: pointer;
         overflow: hidden;
-        img{
-            width: 100%;
-        }
         .preview-overlay{
             position: absolute;
             left: 0;
@@ -67,6 +64,8 @@
         img{
             object-fit: cover;
             border-radius: 20px;
+            height: 100%;
+            width: 100%;
         }
         &:hover{
             .preview-overlay{

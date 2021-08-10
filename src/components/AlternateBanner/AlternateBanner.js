@@ -19,10 +19,10 @@ const AlternateBanner = (props) => {
                         </div>
                     </div>
                 </div>
+                <Shape shape="cylinder" noanimation/>
+                <Shape shape="pyramid" noanimation/>
             </div>
-            <Shape shape="cylinder" noanimation/>
             <Shape shape="donut" noanimation/>
-            <Shape shape="pyramid" noanimation/>
         </section>
 
     )
