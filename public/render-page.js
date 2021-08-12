@@ -15,7 +15,8 @@
 exports.ssrComponents = {
   "component---cache-dev-404-page-js": preferDefault(__webpack_require__(/*! ./.cache/dev-404-page.js */ "./.cache/dev-404-page.js")),
   "component---src-pages-404-js": preferDefault(__webpack_require__(/*! ./src/pages/404.js */ "./src/pages/404.js")),
-  "component---src-pages-index-js": preferDefault(__webpack_require__(/*! ./src/pages/index.js */ "./src/pages/index.js"))
+  "component---src-pages-index-js": preferDefault(__webpack_require__(/*! ./src/pages/index.js */ "./src/pages/index.js")),
+  "component---src-pages-resume-js": preferDefault(__webpack_require__(/*! ./src/pages/resume.js */ "./src/pages/resume.js"))
   }
 
 
@@ -17742,7 +17743,7 @@ var plugins = [{
     "cache_busting_mode": "query",
     "crossOrigin": "anonymous",
     "include_favicon": true,
-    "cacheDigest": null
+    "cacheDigest": "55d1fe5e659a6e6a36d6147c7253609c"
   }
 }];
 /* global plugins */
@@ -20295,6 +20296,69 @@ const MobileMenu = props => {
 
 /***/ }),
 
+/***/ "./src/components/AlternateBanner/AlternateBanner.js":
+/*!***********************************************************!*\
+  !*** ./src/components/AlternateBanner/AlternateBanner.js ***!
+  \***********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _AlternateBanner_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./AlternateBanner.scss */ "./src/components/AlternateBanner/AlternateBanner.scss");
+/* harmony import */ var _AlternateBanner_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_AlternateBanner_scss__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _Shape_Shape__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../Shape/Shape */ "./src/components/Shape/Shape.js");
+/* harmony import */ var _fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @fortawesome/react-fontawesome */ "./node_modules/@fortawesome/react-fontawesome/index.es.js");
+/* harmony import */ var _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @fortawesome/free-solid-svg-icons */ "./node_modules/@fortawesome/free-solid-svg-icons/index.es.js");
+
+
+
+
+
+
+const AlternateBanner = props => {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("section", {
+    className: "AlternateBanner"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "container text-center"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "row"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "col-12 col-lg-8 mx-auto"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", {
+    className: "reveal reveal-up"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
+    className: "background-color"
+  }, props.fields.heading)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
+    className: "copy reveal reveal-up"
+  }, props.fields.copy, " "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "reveal reveal-up"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
+    target: "_blank",
+    href: `https://${props.fields.downloadableFile.file.url}`,
+    className: "file-download"
+  }, props.fields.downloadableFileText, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_3__.FontAwesomeIcon, {
+    icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_4__.faFileDownload
+  }))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Shape_Shape__WEBPACK_IMPORTED_MODULE_2__.default, {
+    shape: "cylinder",
+    noanimation: true
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Shape_Shape__WEBPACK_IMPORTED_MODULE_2__.default, {
+    shape: "pyramid",
+    noanimation: true
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Shape_Shape__WEBPACK_IMPORTED_MODULE_2__.default, {
+    shape: "donut",
+    noanimation: true
+  }));
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (AlternateBanner);
+
+/***/ }),
+
 /***/ "./src/components/Banner/Banner.js":
 /*!*****************************************!*\
   !*** ./src/components/Banner/Banner.js ***!
@@ -20981,6 +21045,185 @@ const Projects = props => {
 
 /***/ }),
 
+/***/ "./src/components/Resume/Resume.js":
+/*!*****************************************!*\
+  !*** ./src/components/Resume/Resume.js ***!
+  \*****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Resume_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Resume.scss */ "./src/components/Resume/Resume.scss");
+/* harmony import */ var _Resume_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_Resume_scss__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _ResumeSection_ResumeSection__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./ResumeSection/ResumeSection */ "./src/components/Resume/ResumeSection/ResumeSection.js");
+/* harmony import */ var _Shape_Shape__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../Shape/Shape */ "./src/components/Shape/Shape.js");
+
+
+
+
+
+const Resume = props => {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("section", {
+    className: "Resume"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "container"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "resume-inner"
+  }, props.fields.resumeSections.map(section => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_ResumeSection_ResumeSection__WEBPACK_IMPORTED_MODULE_2__.default, {
+    key: section.contentful_id,
+    heading: section.heading,
+    items: section.resumeItems
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Shape_Shape__WEBPACK_IMPORTED_MODULE_3__.default, {
+    shape: "cylinder",
+    noanimation: true
+  })));
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Resume);
+
+/***/ }),
+
+/***/ "./src/components/Resume/ResumeItem/ResumeItem.js":
+/*!********************************************************!*\
+  !*** ./src/components/Resume/ResumeItem/ResumeItem.js ***!
+  \********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _ResumeItem_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ResumeItem.scss */ "./src/components/Resume/ResumeItem/ResumeItem.scss");
+/* harmony import */ var _ResumeItem_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_ResumeItem_scss__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _Tag_Tag__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../Tag/Tag */ "./src/components/Tag/Tag.js");
+
+
+
+
+const ResumeItem = props => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+  className: "ResumeItem"
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", {
+  className: "mb-0"
+}, props.title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
+  className: "subitlte mb-0"
+}, props.subTitle), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Tag_Tag__WEBPACK_IMPORTED_MODULE_2__.default, {
+  text: props.date
+}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
+  className: "description mt-3"
+}, props.description));
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ResumeItem);
+
+/***/ }),
+
+/***/ "./src/components/Resume/ResumeSection/ResumeSection.js":
+/*!**************************************************************!*\
+  !*** ./src/components/Resume/ResumeSection/ResumeSection.js ***!
+  \**************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _ResumeSection_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ResumeSection.scss */ "./src/components/Resume/ResumeSection/ResumeSection.scss");
+/* harmony import */ var _ResumeSection_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_ResumeSection_scss__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _ResumeItem_ResumeItem__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../ResumeItem/ResumeItem */ "./src/components/Resume/ResumeItem/ResumeItem.js");
+/* harmony import */ var _SimpleResumeItem_SimpleResumeItem__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../SimpleResumeItem/SimpleResumeItem */ "./src/components/Resume/SimpleResumeItem/SimpleResumeItem.js");
+
+
+
+
+
+const ResumeSection = props => {
+  let delay = 2;
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "ResumeSection"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", {
+    className: "text-center mb-3 reveal reveal-up"
+  }, props.heading), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "row justify-content-center"
+  }, props.items.map((item, index) => {
+    let component;
+    console.log(delay);
+
+    if (item.__typename === 'ContentfulResumeItem') {
+      component = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+        key: item.contentful_id,
+        className: `col-12 col-lg col-md-6 my-3 reveal reveal-right delay-${delay}`
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_ResumeItem_ResumeItem__WEBPACK_IMPORTED_MODULE_2__.default, {
+        title: item.title,
+        subTitle: item.subTitle,
+        date: item.date,
+        description: item.description
+      }));
+    } else {
+      component = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+        key: item.contentful_id,
+        className: `col-12 col-lg col-md-6 my-3 reveal reveal-right delay-${delay}`
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_SimpleResumeItem_SimpleResumeItem__WEBPACK_IMPORTED_MODULE_3__.default, {
+        title: item.title,
+        tags: item.tags
+      }));
+    }
+
+    delay += 2;
+    return component;
+  })));
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ResumeSection);
+
+/***/ }),
+
+/***/ "./src/components/Resume/SimpleResumeItem/SimpleResumeItem.js":
+/*!********************************************************************!*\
+  !*** ./src/components/Resume/SimpleResumeItem/SimpleResumeItem.js ***!
+  \********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _SimpleResumeItem_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./SimpleResumeItem.scss */ "./src/components/Resume/SimpleResumeItem/SimpleResumeItem.scss");
+/* harmony import */ var _SimpleResumeItem_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_SimpleResumeItem_scss__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _Tag_Tag__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../Tag/Tag */ "./src/components/Tag/Tag.js");
+
+
+
+
+const SimpleResumeItem = props => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+  className: "SimpleResumeItem"
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", {
+  className: "mb-0"
+}, props.title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+  className: "row tag-row"
+}, props.tags.map(tag => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+  key: tag.id,
+  className: "col-auto tag-col my-2"
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Tag_Tag__WEBPACK_IMPORTED_MODULE_2__.default, {
+  text: tag.title
+})))));
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (SimpleResumeItem);
+
+/***/ }),
+
 /***/ "./src/components/Shape/Shape.js":
 /*!***************************************!*\
   !*** ./src/components/Shape/Shape.js ***!
@@ -21058,6 +21301,32 @@ const Shape = props => {
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Shape);
+
+/***/ }),
+
+/***/ "./src/components/Tag/Tag.js":
+/*!***********************************!*\
+  !*** ./src/components/Tag/Tag.js ***!
+  \***********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Tag_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Tag.scss */ "./src/components/Tag/Tag.scss");
+/* harmony import */ var _Tag_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_Tag_scss__WEBPACK_IMPORTED_MODULE_1__);
+
+
+
+const Tag = props => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
+  className: "Tag"
+}, props.text);
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Tag);
 
 /***/ }),
 
@@ -21168,6 +21437,67 @@ const IndexPage = ({
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (IndexPage);
 const query = "1631886810";
+
+/***/ }),
+
+/***/ "./src/pages/resume.js":
+/*!*****************************!*\
+  !*** ./src/pages/resume.js ***!
+  \*****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Layout_Layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Layout/Layout */ "./src/Layout/Layout.js");
+/* harmony import */ var _pageStyles_ResumePage_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./pageStyles/ResumePage.scss */ "./src/pages/pageStyles/ResumePage.scss");
+/* harmony import */ var _pageStyles_ResumePage_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_pageStyles_ResumePage_scss__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _components_AlternateBanner_AlternateBanner__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/AlternateBanner/AlternateBanner */ "./src/components/AlternateBanner/AlternateBanner.js");
+/* harmony import */ var _components_Resume_Resume__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/Resume/Resume */ "./src/components/Resume/Resume.js");
+
+
+
+
+
+
+const ResumePage = ({
+  data
+}) => {
+  let sections = data.contentfulResumePageTemplate.contentModules;
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Layout_Layout__WEBPACK_IMPORTED_MODULE_1__.default, {
+    pageName: "ResumePage"
+  }, sections.map(section => {
+    let component = '';
+
+    switch (section.__typename) {
+      case 'ContentfulAlternateBannerLayout':
+        component = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_AlternateBanner_AlternateBanner__WEBPACK_IMPORTED_MODULE_3__.default, {
+          key: section.contentful_id,
+          fields: section
+        });
+        break;
+
+      case 'ContentfulResume':
+        component = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_Resume_Resume__WEBPACK_IMPORTED_MODULE_4__.default, {
+          key: section.contentful_id,
+          fields: section
+        });
+        break;
+
+      default:
+        break;
+    }
+
+    return component;
+  }));
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ResumePage);
+const query = "3658146480";
 
 /***/ }),
 
@@ -28142,6 +28472,16 @@ function mitt(all                 ) {
 
 /***/ }),
 
+/***/ "./src/components/AlternateBanner/AlternateBanner.scss":
+/*!*************************************************************!*\
+  !*** ./src/components/AlternateBanner/AlternateBanner.scss ***!
+  \*************************************************************/
+/***/ (() => {
+
+
+
+/***/ }),
+
 /***/ "./src/components/Banner/Banner.scss":
 /*!*******************************************!*\
   !*** ./src/components/Banner/Banner.scss ***!
@@ -28232,10 +28572,60 @@ function mitt(all                 ) {
 
 /***/ }),
 
+/***/ "./src/components/Resume/Resume.scss":
+/*!*******************************************!*\
+  !*** ./src/components/Resume/Resume.scss ***!
+  \*******************************************/
+/***/ (() => {
+
+
+
+/***/ }),
+
+/***/ "./src/components/Resume/ResumeItem/ResumeItem.scss":
+/*!**********************************************************!*\
+  !*** ./src/components/Resume/ResumeItem/ResumeItem.scss ***!
+  \**********************************************************/
+/***/ (() => {
+
+
+
+/***/ }),
+
+/***/ "./src/components/Resume/ResumeSection/ResumeSection.scss":
+/*!****************************************************************!*\
+  !*** ./src/components/Resume/ResumeSection/ResumeSection.scss ***!
+  \****************************************************************/
+/***/ (() => {
+
+
+
+/***/ }),
+
+/***/ "./src/components/Resume/SimpleResumeItem/SimpleResumeItem.scss":
+/*!**********************************************************************!*\
+  !*** ./src/components/Resume/SimpleResumeItem/SimpleResumeItem.scss ***!
+  \**********************************************************************/
+/***/ (() => {
+
+
+
+/***/ }),
+
 /***/ "./src/components/Shape/Shape.scss":
 /*!*****************************************!*\
   !*** ./src/components/Shape/Shape.scss ***!
   \*****************************************/
+/***/ (() => {
+
+
+
+/***/ }),
+
+/***/ "./src/components/Tag/Tag.scss":
+/*!*************************************!*\
+  !*** ./src/components/Tag/Tag.scss ***!
+  \*************************************/
 /***/ (() => {
 
 
@@ -28256,6 +28646,16 @@ function mitt(all                 ) {
 /*!****************************************!*\
   !*** ./src/pages/pageStyles/Home.scss ***!
   \****************************************/
+/***/ (() => {
+
+
+
+/***/ }),
+
+/***/ "./src/pages/pageStyles/ResumePage.scss":
+/*!**********************************************!*\
+  !*** ./src/pages/pageStyles/ResumePage.scss ***!
+  \**********************************************/
 /***/ (() => {
 
 

@@ -10,7 +10,7 @@ const AlternateBanner = (props) => {
                 <div className="row">
                     <div className="col-12 col-lg-8 mx-auto">
                         <h1 className="reveal reveal-up"><span className="background-color">{props.fields.heading}</span></h1>
-                        <p className="copy reveal reveal-up">I am comfortable using a variety of different web technologies, from front end languages like Javascript, to back end languages like PHP. </p>
+                        <p className="copy reveal reveal-up">{props.fields.copy} </p>
                         <div className="reveal reveal-up">
                             <a target="_blank" href={`https://${props.fields.downloadableFile.file.url}`}className="file-download">
                                 {props.fields.downloadableFileText}
